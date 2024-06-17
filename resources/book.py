@@ -14,7 +14,6 @@ ITEM_NOT_FOUND = "Book not found."
 book_schema = BookSchema()
 book_list_schema = BookSchema(many=True)
 
-# Model required by flask_restplus for expect
 item = book_ns.model('Book', {
     'title': fields.String('Book title'),
     'pages': fields.Integer(0),
